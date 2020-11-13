@@ -3,7 +3,7 @@ const sum = (total, item) => {
 }
 
 const calculator = (() => {
-    if 
+    
     const add = (...args) => {
         let result = args.reduce(function(total, item) {
             return total + item;
@@ -12,12 +12,26 @@ const calculator = (() => {
     }
 
     const subtract = (a, b) => {
-        
+        let result = a - b;
+        return result;
+    }
+
+    const multiply= (...args) => {
+        let result = args.reduce(function(total, item) {
+            return total * item;
+        });
+        return result;
+    }
+
+    const divide = (a, b) => {
+        if (b==0) {return 'Error: No division by zero'}
+        let result = a/b
+        return result
     }
 
 
 
-    return {add};
+    return {add, subtract, multiply, divide};
 
 })();
 

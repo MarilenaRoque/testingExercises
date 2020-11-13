@@ -45,5 +45,5 @@ it("works for floats results", () => {
 })
 
 it("return a message when try to divide by zero", () => {
-    expect(calculator.divide(10,50)).toBe("Error: No division by zero")
+    expect(calculator.divide(10,0)).toBe("Error: No division by zero")
 })
